@@ -3,8 +3,94 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Clase HTML + CSS + Javascript</title>
+	<link rel="stylesheet" href="lib/css/normalize.css">
+	<link rel="stylesheet" href="lib/css/styles.css">
+	<script src="lib/js/jquery-1.10.2.min.js"></script>
+	<script src="lib/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script src="lib/js/prefixfree.min.js"></script>
+	<script src="lib/js/underscore.js"></script>
+	<script src="lib/js/backbone-min.js"></script>
 </head>
 <body>
-	Test
+	<section data-step="0">
+		<h1>HTML + CSS + Javascript</h1>
+		<ul>
+			<li>HTML5 y semántica</li>
+			<li>CSS3</li>
+			<li>Responsive Design</li>
+			<li>Tipografías</li>
+			<li>Audio y video</li>
+			<li>Efectos CSS3</li>
+			<li>Programación en Javascript</li>
+			<li>JQuery</li>
+			<li>DOM</li>
+			<li>Compatibilidad entre navegadores</li>
+		</ul>
+	</section>
+	<section data-step="1" class="content">
+		<h2>HTML</h2>
+		<p><a href="#/section/2">HTML5 es la actualización de HTML</a>. <a href="#/section/3">HTML5 también es un término de marketing</a> para agrupar las nuevas tecnologías de desarrollo de aplicaciones web.</p>
+	</section>
+	<section data-step="2" class="content">
+		<h2>HTML5 - actualización de HTML</h2>
+		<p class="quote">Es la quinta revisión importante del lenguaje básico de la World Wide Web <a href="http://es.wikipedia.org/wiki/HTML5" target="blank">Wikipedia</a></p>
+		<p class="detail">HTML5 establece una serie de nuevos elementos y atributos. Algunos de ellos son técnicamente similares a algunas etiquetas pero tienen un significado semántico. Otros elementos proporcionan nuevas funcionalidades.</p>
+		<p class="detail">Además algunos elementos quedan obsoletos.</p>
+	</section>
+	<section data-step="3" class="content">
+		<h2>HTML5 - Marketing</h2>
+		<p>Es una colección de herramientas y estandares para el desarrollo web.</p>
+		<img src="lib/img/png/3d_effects.png" alt="3D, gráficos y efectos">
+		<img src="lib/img/png/conectivity.png" alt="Conectividad">
+		<img src="lib/img/png/css3.png" alt="CSS3">
+		<img src="lib/img/png/device_access.png" alt="Acceso a dispositivos">
+		<img src="lib/img/png/multimedia.png" alt="Multimedia">
+		<img src="lib/img/png/offline_storage.png" alt="Almacenamiento offline">
+		<img src="lib/img/png/performance.png" alt="Rendimiento">
+		<img src="lib/img/png/semantics.png" alt="Semántica">
+		<p class="detail">3D, gráficos y efectos, conectividad, CSS3, acceso a dispositivos, multimedia, almacenamiento offline, rendimiento, semántica.</p>
+	</section>
+	<section data-step="4" class="content">
+		<img src="lib/img/png/3d_effects.png" alt="3D, gráficos y efectos">
+		<h2>HTML5 - 3D, gráficos y efectos</h2>
+		<p class="quote">La Web ha sido siempre un medio visual, pero restringido en el mejor de los casos. Hasta hace poco, los desarrolladores de HTML solo podían utilizar CSS y JavaScript para crear animaciones o efectos visuales para sus sitios web, o tenían que recurrir a complementos como Flash. <a href="http://www.html5rocks.com/es/features/graphics" target="blank">HTML5Rocks</a></p>
+		<p class="detail">Sin embargo, esta situación ha cambiado con la incorporación de tecnologías como el elemento canvas, la especificación WebGL y las imágenes SVG. De hecho, hay muchas funciones nuevas que permiten crear gráficos en la Web: Canvas 2D, WebGL, SVG, las transformaciones 3D de CSS y ​​el estándar SMIL.</p>
+	</section>
+	<section data-step="5" class="content">
+		<img src="lib/img/png/conectivity.png" alt="Conectividad">
+		<h2>HTML5 - Conectividad</h2>
+		<p class="quote">Conectividad más eficiente significa disponer de chats en tiempo real, juegos más rápidos y una mejor comunicación. Los Web Sockets y los Server-Sent Events enviados por el servidor transmitirán datos entre cliente y servidor de una forma mucho más eficiente que antes. <a href="http://www.w3c.es/Divulgacion/html/logo/" target="blank">W3C</a></p>
+	</section>
+	<section data-step="6" class="content">
+		<img src="lib/img/png/css3.png" alt="CSS3">
+		<h2>HTML5 - CSS3</h2>
+		<p class="quote">CSS3 ofrece un amplio rango de estilos y efectos, mejorando las aplicaciones web sin sacrificar el rendimiento o la estructura semántica. Además, el formato de fuentes web abiertas (WOFF) ofrece flexibilidad tipográfica y control más allá de lo que la web ha ofrecido hasta ahora. <a href="http://www.w3c.es/Divulgacion/html/logo/" target="blank">W3C</a></p>
+	</section>
+	<section data-step="7" class="content">
+		<img src="lib/img/png/device_access.png" alt="Acceso a dispositivos">
+		<h2>HTML5 - Acceso a dispositivos</h2>
+		<p class="quote">La geo-localización es sólo el comienzo. HTML5 ayudará a las aplicaciones a acceder a los dispositivos más allá del navegador. <a href="http://www.w3c.es/Divulgacion/html/logo/" target="blank">W3C</a></p>
+	</section>
+	<section data-step="8" class="content">
+		<img src="lib/img/png/multimedia.png" alt="Multimedia">
+		<h2>HTML5 - Multimedia</h2>
+		<p class="quote">Audio y vídeo son los elementos más destacados en la web del HTML5, conviviendo en harmonía con tus aplicaciones y sitios. <a href="http://www.w3c.es/Divulgacion/html/logo/" target="blank">W3C</a></p>
+	</section>
+	<section data-step="9" class="content">
+		<img src="lib/img/png/offline_storage.png" alt="Almacenamiento offline">
+		<h2>HTML5 - Almacenamiento offline</h2>
+		<p class="quote">Las aplicaciones de HTML5 se iniciarán más rápido y funcionarán incluso si no se dispone de conexión a internet, gracias a la Caché de Aplicaciones, Almacenamiento Local, DB Indexadas y las APIs de ficheros. <a href="http://www.w3c.es/Divulgacion/html/logo/" target="blank">W3C</a></p>
+	</section>
+	<section data-step="10" class="content">
+		<img src="lib/img/png/performance.png" alt="Rendimiento">
+		<h2>HTML5 - Rendimiento</h2>
+		<p class="quote">Los navegadores modernos pueden ofrecer sitios y aplicaciones que compiten con el rendimiento de las nativas en todo tipo de dispositivos y pantallas. Este rendimiento no viene gratis, como desarrolladores tenemos que usar una variedad de técnicas y tecnologías para sacar el máximo provecho del navegador. El rendimiento es una parte fundamental de la experiencia del usuario, es un tema constante en todos los aspectos del desarrollo. <a href="http://www.html5rocks.com/es/features/performance" target="blank">HTML5Rocks</a></p>
+	</section>
+	<section data-step="11" class="content">
+		<img src="lib/img/png/semantics.png" alt="Semántica">
+		<h2>HTML5 - Semántica</h2>
+		<p class="quote">Ofreciendo significado a la estructura, la semántica es la parte central y frontal del HTML5. Un conjunto de etiquetas más ricas, con RDFa, microdatos y microformatos, harán que la web basada en datos sea más útil para programas y usuarios. <a href="http://www.w3c.es/Divulgacion/html/logo/" target="blank">W3C</a></p>
+	</section>
+	<script src="lib/js/scripts.js"></script>
 </body>
 </html>
