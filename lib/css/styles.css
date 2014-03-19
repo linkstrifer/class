@@ -18,11 +18,11 @@ p {
   font-weight: 300;
   line-height: 1.7em;
   margin: auto;
+  margin-top: 10px;
   width: 90%;
 }
 p.detail {
   font-size: 14px;
-  margin-top: 10px;
 }
 p.quote {
   background-color: rgba(0,0,0,0.05);
@@ -67,6 +67,44 @@ section.content:before {
 }
 section.show {
   opacity: 1;
+}
+pre {
+  display: inline-block;
+  line-height: 0;
+  font-size: 16px;
+  margin: 0 auto;
+}
+pre code {
+  display: block;
+  line-height: 1em;
+  margin: 0 auto;
+}
+pre code.code {
+  background-color: rgba(0,0,0,0.05);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 1em;
+}
+pre code.code.single {
+  display: block;
+}
+pre code.code.single.left {
+  text-align: left;
+}
+span.code {
+  background-color: rgba(0,0,0,0.05);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+span.code.single {
+  display: block;
+}
+span.code.single.left {
+  text-align: left;
+}
+span.highlight {
+  text-decoration: underline;
 }
 ul {
   font-weight: 300;

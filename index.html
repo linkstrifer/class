@@ -5,17 +5,21 @@
 	<title>Clase HTML + CSS + Javascript</title>
 	<link rel="stylesheet" href="lib/css/normalize.css">
 	<link rel="stylesheet" href="lib/css/styles.css">
+	<link rel="stylesheet" href="lib/css/prettify.css">
 	<script src="lib/js/jquery-1.10.2.min.js"></script>
 	<script src="lib/js/jquery.scrollTo-1.4.3.1-min.js"></script>
 	<script src="lib/js/prefixfree.min.js"></script>
 	<script src="lib/js/underscore.js"></script>
 	<script src="lib/js/backbone-min.js"></script>
+	<script src="lib/js/prettify.js"></script>
+	<script src="lib/js/lang-css.js"></script>
 </head>
 <body>
-	<section data-step="0">
+	<section>
 		<h1>HTML + CSS + Javascript</h1>
 		<ul>
-			<li>HTML5</li>
+			<a href="#/section/1"><li>HTML5</li></a>
+			<a href="#/section/12"><li>Sintaxis HTML</li></a>
 			<!--<li>CSS3</li>
 			<li>Responsive Design</li>
 			<li>Tipografías</li>
@@ -27,17 +31,18 @@
 			<li>Compatibilidad entre navegadores</li>-->
 		</ul>
 	</section>
-	<section data-step="1" class="content">
+	<section  class="content">
 		<h2>HTML</h2>
 		<p><a href="#/section/2">HTML5 es la actualización de HTML</a>. <a href="#/section/3">HTML5 también es un término de marketing</a> para agrupar las nuevas tecnologías de desarrollo de aplicaciones web.</p>
 	</section>
-	<section data-step="2" class="content">
+	<section  class="content">
 		<h2>HTML5 - actualización de HTML</h2>
-		<p class="quote">Es la quinta revisión importante del lenguaje básico de la World Wide Web <a href="http://es.wikipedia.org/wiki/HTML5" target="blank">Wikipedia</a></p>
+		<p>HTML son las siglas de HyperText Markup Language, que traduce lenguaje de marcas de hipertexto, es el lenguaje con que se modelan las paginas de Internet.</p>
+		<p class="quote">HTML5 es la quinta revisión importante del lenguaje básico de la World Wide Web <a href="http://es.wikipedia.org/wiki/HTML5" target="blank">Wikipedia</a></p>
 		<p class="detail">HTML5 establece una serie de nuevos elementos y atributos. Algunos de ellos son técnicamente similares a algunas etiquetas pero tienen un significado semántico. Otros elementos proporcionan nuevas funcionalidades.</p>
 		<p class="detail">Además algunos elementos quedan obsoletos.</p>
 	</section>
-	<section data-step="3" class="content">
+	<section  class="content">
 		<h2>HTML5 - Marketing</h2>
 		<p>Es una colección de herramientas y estandares para el desarrollo web.</p>
 		<img src="lib/img/png/3d_effects.png" alt="3D, gráficos y efectos">
@@ -50,46 +55,123 @@
 		<img src="lib/img/png/semantics.png" alt="Semántica">
 		<p class="detail">3D, gráficos y efectos, conectividad, CSS3, acceso a dispositivos, multimedia, almacenamiento offline, rendimiento, semántica.</p>
 	</section>
-	<section data-step="4" class="content">
+	<section  class="content">
 		<img src="lib/img/png/3d_effects.png" alt="3D, gráficos y efectos">
 		<h2>HTML5 - 3D, gráficos y efectos</h2>
 		<p class="quote">La Web ha sido siempre un medio visual, pero restringido en el mejor de los casos. Hasta hace poco, los desarrolladores de HTML solo podían utilizar CSS y JavaScript para crear animaciones o efectos visuales para sus sitios web, o tenían que recurrir a complementos como Flash. <a href="http://www.html5rocks.com/es/features/graphics" target="blank">HTML5Rocks</a></p>
 		<p class="detail">Sin embargo, esta situación ha cambiado con la incorporación de tecnologías como el elemento canvas, la especificación WebGL y las imágenes SVG. De hecho, hay muchas funciones nuevas que permiten crear gráficos en la Web: Canvas 2D, WebGL, SVG, las transformaciones 3D de CSS y ​​el estándar SMIL.</p>
 	</section>
-	<section data-step="5" class="content">
+	<section  class="content">
 		<img src="lib/img/png/conectivity.png" alt="Conectividad">
 		<h2>HTML5 - Conectividad</h2>
 		<p class="quote">Conectividad más eficiente significa disponer de chats en tiempo real, juegos más rápidos y una mejor comunicación. Los Web Sockets y los Server-Sent Events enviados por el servidor transmitirán datos entre cliente y servidor de una forma mucho más eficiente que antes. <a href="http://www.w3c.es/Divulgacion/html/logo/" target="blank">W3C</a></p>
 	</section>
-	<section data-step="6" class="content">
+	<section  class="content">
 		<img src="lib/img/png/css3.png" alt="CSS3">
 		<h2>HTML5 - CSS3</h2>
 		<p class="quote">CSS3 ofrece un amplio rango de estilos y efectos, mejorando las aplicaciones web sin sacrificar el rendimiento o la estructura semántica. Además, el formato de fuentes web abiertas (WOFF) ofrece flexibilidad tipográfica y control más allá de lo que la web ha ofrecido hasta ahora. <a href="http://www.w3c.es/Divulgacion/html/logo/" target="blank">W3C</a></p>
 	</section>
-	<section data-step="7" class="content">
+	<section  class="content">
 		<img src="lib/img/png/device_access.png" alt="Acceso a dispositivos">
 		<h2>HTML5 - Acceso a dispositivos</h2>
 		<p class="quote">La geo-localización es sólo el comienzo. HTML5 ayudará a las aplicaciones a acceder a los dispositivos más allá del navegador. <a href="http://www.w3c.es/Divulgacion/html/logo/" target="blank">W3C</a></p>
 	</section>
-	<section data-step="8" class="content">
+	<section  class="content">
 		<img src="lib/img/png/multimedia.png" alt="Multimedia">
 		<h2>HTML5 - Multimedia</h2>
 		<p class="quote">Audio y vídeo son los elementos más destacados en la web del HTML5, conviviendo en harmonía con tus aplicaciones y sitios. <a href="http://www.w3c.es/Divulgacion/html/logo/" target="blank">W3C</a></p>
 	</section>
-	<section data-step="9" class="content">
+	<section  class="content">
 		<img src="lib/img/png/offline_storage.png" alt="Almacenamiento offline">
 		<h2>HTML5 - Almacenamiento offline</h2>
 		<p class="quote">Las aplicaciones de HTML5 se iniciarán más rápido y funcionarán incluso si no se dispone de conexión a internet, gracias a la Caché de Aplicaciones, Almacenamiento Local, DB Indexadas y las APIs de ficheros. <a href="http://www.w3c.es/Divulgacion/html/logo/" target="blank">W3C</a></p>
 	</section>
-	<section data-step="10" class="content">
+	<section  class="content">
 		<img src="lib/img/png/performance.png" alt="Rendimiento">
 		<h2>HTML5 - Rendimiento</h2>
 		<p class="quote">Los navegadores modernos pueden ofrecer sitios y aplicaciones que compiten con el rendimiento de las nativas en todo tipo de dispositivos y pantallas. Este rendimiento no viene gratis, como desarrolladores tenemos que usar una variedad de técnicas y tecnologías para sacar el máximo provecho del navegador. El rendimiento es una parte fundamental de la experiencia del usuario, es un tema constante en todos los aspectos del desarrollo. <a href="http://www.html5rocks.com/es/features/performance" target="blank">HTML5Rocks</a></p>
 	</section>
-	<section data-step="11" class="content">
+	<section  class="content">
 		<img src="lib/img/png/semantics.png" alt="Semántica">
 		<h2>HTML5 - Semántica</h2>
 		<p class="quote">Ofreciendo significado a la estructura, la semántica es la parte central y frontal del HTML5. Un conjunto de etiquetas más ricas, con RDFa, microdatos y microformatos, harán que la web basada en datos sea más útil para programas y usuarios. <a href="http://www.w3c.es/Divulgacion/html/logo/" target="blank">W3C</a></p>
+	</section>
+	<section  class="content">
+		<h2>Sintaxis HTML</h2>
+		<p>HTML esta basado en etiquetas y atributos.</p>
+		<p class="detail">Cada etiqueta hace referencia a contenido del documento.</p>
+		<p class="detail">Las etiquetas son palabras dentro de paréntesis angulares <span class="code"><</span> y <span class="code">></span>. Las etiquetas normalmente vienen en pares, una etiqueta de inicio y una etiqueta de fin o cierre.</p>
+		<p>Ejemplo:</p>
+		<pre>
+			<code class="code prettyprint lang-html">&lt;etiqueta&gt; &lt;/etiqueta&gt;</code>
+		</pre>
+		<p class="detail">La etiqueta de cierre es similar que la de inicio pero con una barra inclinada antes del nombre de la etiqueta.</p>
+	</section>
+	<section  class="content">
+		<h2>Sintaxis HTML - Elementos HTML</h2>
+		<p>"Etiqueta HTML" y "elemento HTML" son dos cosas diferentes.</p>
+		<p class="detail">Un elemento HTML es todo lo que esta entre las etiquetas HTML, incluyendo las etiquetas.</p>
+		<p>Ejemplo de elemento HTML:</p>
+		<pre>
+			<code class="code prettyprint lang-html">&lt;p&gt;Esto es un parrafo&lt;/p&gt;</code>
+		</pre>
+	</section>
+	<section  class="content">
+		<h2>Sintaxis HTML - Atributos HTML</h2>
+		<p>Los elementos HTML <span class="highlight">pueden</span> tener atributos. Los atributos proporcionan información adicional sobre el elemento.</p>
+		<p class="detail">Son palabras que van dentro de la etiqueta de inicio.<br>
+		La sintaxis de un atributo es <span class="code">nombre="valor"</span></p>
+		<p>Ejemplo:</p>
+		<pre>
+			<code class="code prettyprint lang-html">&lt;a href="url"&gt;Enlace&lt;/a&gt;</code>
+		</pre>
+		<p class="detail">El atributo <span class="code">href</span> especifica el destino del enlace.</p>
+	</section>
+	<section  class="content">
+		<h2>Sintaxis HTML - Estructura de una pagina</h2>
+		<p>Todas las paginas del mundo están conformadas por 4 etiquetas básicas: <span class="code dec">&lt;!DOCTYPE html&gt;</span>, <span class="code tag">&lt;html&gt;</span>, <span class="code tag">&lt;head&gt;</span> y <span class="code tag">&lt;body&gt;</span></p>
+	</section>
+	<section  class="content">
+		<h2>Sintaxis HTML - La etiqueta <span class="code dec">&lt;!DOCTYPE html&gt;</span></h2>
+		<p>La etiqueta <span class="code dec">&lt;!DOCTYPE html&gt;</span> ayuda al navegador a mostar correctamente el contenido de la pagina, en esta etiqueta se le dice al navegador que versión de HTML se esta usando.</p>
+		<p>HTML 4.01 <span class="code single dec">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;<br/>&quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</span></p>
+		<p>HTML5 <span class="code single dec">&lt;!DOCTYPE html&gt;	</span></p>
+		<p class="detail">Es mucho más fácil usar la etiqueta de HTML5.</p>
+	</section>
+	<section class="content">
+		<h2>Sintaxis HTML - La etiqueta <span class="code tag">&lt;html&gt;</span></h2>
+		<p>La etiqueta <span class="code tag">&lt;html&gt;</span> le dice al navegador que es un documento html, también le dice que esta es la raíz del documento.</p>
+		<p class="detail">Esta etiqueta es el contenedor de todos los elementos HTML, a excepción del <span class="code dec">&lt;!DOCTYPE html&gt;</span></p>
+	</section>
+	<section class="content">
+		<h2>Sintaxis HTML - La etiqueta <span class="code tag">&lt;head&gt;</span></h2>
+		<p>La etiqueta <span class="code tag">&lt;html&gt;</span> es la cabecera del documento, contiene el título, y puede contener scripts, hojas de estilos, meta-información y otras cosas.</p>
+		<p class="detail">Estos son los elementos que pueden ir dentro de la cabecera del documento:<br>
+		<span class="code tag">&lt;title&gt;</span>, <span class="code tag">&lt;style&gt;</span>, <span class="code tag">&lt;base&gt;</span>, <span class="code tag">&lt;link&gt;</span>, <span class="code tag">&lt;meta&gt;</span>, <span class="code tag">&lt;script&gt;</span>, <span class="code tag">&lt;noscript&gt;</span>.</p>
+		</ul>
+	</section>
+	<section class="content">
+		<h2>Sintaxis HTML - La etiqueta <span class="code tag">&lt;body&gt;</span></h2>
+		<p>La etiqueta <span class="code tag">&lt;body&gt;</span> define el cuerpo del documento. Aquí es donde se encuentran todos los elementos como los parrafos, enlaces, imágenes, videos, tablas, listas ...</p>
+	</section>
+	<section class="content">
+		<h2>Sintaxis HTML - Estructura de una pagina</h2>
+		<p>Estructura de una pagina HTML sin contenido</p>
+		<p class="detail">
+			<pre>
+				<code class="code single left prettyprint">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+				</code>
+			</pre>
+		</p>
+		<p class="detail">La etiqueta <span class="code tag">&lt;title&gt;</span> es requerida en la cabecera. esta etiqueta define el título de la pagina.</p>
 	</section>
 	<script src="lib/js/scripts.js"></script>
 </body>
