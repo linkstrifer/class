@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Jedi';
+  src: url("../fonts/Starjedi.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  font-family: 'Jedi';
+}
+nav {
+  background-color: #fff;
+  font-family: 'Jedi';
+  font-size: 1.5em;
+  height: 80px;
+  padding: 1em;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+#gallery {
+  background-color: #fff;
+  display: inline-block;
+  padding: 1em;
+  margin-top: 80px;
+  position: relative;
+  width: 350px;
+  z-index: 10001;
+}
+#gallery img {
+  display: block;
+  border-color: #000;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 4px;
+  margin: 3em auto;
+  opacity: 0.1;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+#gallery img.current {
+  border-color: #ff3448;
+  opacity: 1;
+}
+#map {
+  display: inline-block;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+#map-canvas {
+  height: 100%;
+  width: 100%;
+}
+#not-map {
+  background-color: #ff3448;
+  color: #fff;
+  height: 0;
+  left: 400px;
+  overflow: hidden;
+  padding: 0 1em;
+  position: fixed;
+  top: 100px;
+  transition: all 0.3s ease-in-out;
+  z-index: 10002;
+}
+#not-map.show {
+  height: 2em;
+}

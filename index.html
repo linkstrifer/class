@@ -18,8 +18,15 @@
 	<section>
 		<h1>HTML + CSS + Javascript</h1>
 		<ul>
-			<a href="#/section/1"><li>HTML5</li></a>
-			<a href="#/section/12"><li>Sintaxis HTML</li></a>
+			<a href="#/section/1">
+				<li>HTML5</li>
+			</a>
+			<a href="#/section/12">
+				<li>Sintaxis HTML</li>
+			</a>
+			<a href="#/section/21">
+				<li>Proyecto</li>
+			</a>
 			<!--<li>CSS3</li>
 			<li>Responsive Design</li>
 			<li>Tipografías</li>
@@ -33,26 +40,26 @@
 	</section>
 	<section  class="content">
 		<h2>HTML</h2>
-		<p><a href="#/section/2">HTML5 es la actualización de HTML</a>. <a href="#/section/3">HTML5 también es un término de marketing</a> para agrupar las nuevas tecnologías de desarrollo de aplicaciones web.</p>
+		<p>HTML5 <a href="#/section/2">es la actualización de HTML</a>, pero también <a href="#/section/3">es un término de marketing</a> para agrupar las nuevas tecnologías de desarrollo de aplicaciones web.</p>
 	</section>
 	<section  class="content">
-		<h2>HTML5 - actualización de HTML</h2>
+		<h2>HTML5 - Actualización de HTML</h2>
 		<p>HTML son las siglas de HyperText Markup Language, que traduce lenguaje de marcas de hipertexto, es el lenguaje con que se modelan las paginas de Internet.</p>
-		<p class="quote">HTML5 es la quinta revisión importante del lenguaje básico de la World Wide Web <a href="http://es.wikipedia.org/wiki/HTML5" target="blank">Wikipedia</a></p>
+		<p class="quote">HTML5 es la quinta revisión importante del lenguaje básico de la World Wide Web. <a href="http://es.wikipedia.org/wiki/HTML5" target="blank">Wikipedia</a></p>
 		<p class="detail">HTML5 establece una serie de nuevos elementos y atributos. Algunos de ellos son técnicamente similares a algunas etiquetas pero tienen un significado semántico. Otros elementos proporcionan nuevas funcionalidades.</p>
 		<p class="detail">Además algunos elementos quedan obsoletos.</p>
 	</section>
 	<section  class="content">
-		<h2>HTML5 - Marketing</h2>
+		<h2>HTML5 - Termino de marketing</h2>
 		<p>Es una colección de herramientas y estandares para el desarrollo web.</p>
-		<img src="lib/img/png/3d_effects.png" alt="3D, gráficos y efectos">
-		<img src="lib/img/png/conectivity.png" alt="Conectividad">
-		<img src="lib/img/png/css3.png" alt="CSS3">
-		<img src="lib/img/png/device_access.png" alt="Acceso a dispositivos">
-		<img src="lib/img/png/multimedia.png" alt="Multimedia">
-		<img src="lib/img/png/offline_storage.png" alt="Almacenamiento offline">
-		<img src="lib/img/png/performance.png" alt="Rendimiento">
-		<img src="lib/img/png/semantics.png" alt="Semántica">
+		<a href="#/section/4"><img src="lib/img/png/3d_effects.png" alt="3D, gráficos y efectos"></a>
+		<a href="#/section/5"><img src="lib/img/png/conectivity.png" alt="Conectividad"></a>
+		<a href="#/section/6"><img src="lib/img/png/css3.png" alt="CSS3"></a>
+		<a href="#/section/7"><img src="lib/img/png/device_access.png" alt="Acceso a dispositivos"></a>
+		<a href="#/section/8"><img src="lib/img/png/multimedia.png" alt="Multimedia"></a>
+		<a href="#/section/9"><img src="lib/img/png/offline_storage.png" alt="Almacenamiento offline"></a>
+		<a href="#/section/10"><img src="lib/img/png/performance.png" alt="Rendimiento"></a>
+		<a href="#/section/11"><img src="lib/img/png/semantics.png" alt="Semántica"></a>
 		<p class="detail">3D, gráficos y efectos, conectividad, CSS3, acceso a dispositivos, multimedia, almacenamiento offline, rendimiento, semántica.</p>
 	</section>
 	<section  class="content">
@@ -125,18 +132,19 @@
 		<pre>
 			<code class="code prettyprint lang-html">&lt;a href="url"&gt;Enlace&lt;/a&gt;</code>
 		</pre>
-		<p class="detail">El atributo <span class="code">href</span> especifica el destino del enlace.</p>
+		<p class="detail">La etiqueta <span class="code">a</span> se utiliza para crear un enlace. El atributo <span class="code">href</span> especifica el destino del enlace.</p>
 	</section>
 	<section  class="content">
 		<h2>Sintaxis HTML - Estructura de una pagina</h2>
-		<p>Todas las paginas del mundo están conformadas por 4 etiquetas básicas: <span class="code dec">&lt;!DOCTYPE html&gt;</span>, <span class="code tag">&lt;html&gt;</span>, <span class="code tag">&lt;head&gt;</span> y <span class="code tag">&lt;body&gt;</span></p>
+		<p>Todas las paginas del mundo están conformadas por 4 etiquetas básicas:<p>
+		<p class="detail"><span class="code dec">&lt;!DOCTYPE html&gt;</span>, <span class="code tag">&lt;html&gt;</span>, <span class="code tag">&lt;head&gt;</span> y <span class="code tag">&lt;body&gt;</span></p>
 	</section>
 	<section  class="content">
 		<h2>Sintaxis HTML - La etiqueta <span class="code dec">&lt;!DOCTYPE html&gt;</span></h2>
 		<p>La etiqueta <span class="code dec">&lt;!DOCTYPE html&gt;</span> ayuda al navegador a mostar correctamente el contenido de la pagina, en esta etiqueta se le dice al navegador que versión de HTML se esta usando.</p>
-		<p>HTML 4.01 <span class="code single dec">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;<br/>&quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</span></p>
-		<p>HTML5 <span class="code single dec">&lt;!DOCTYPE html&gt;	</span></p>
-		<p class="detail">Es mucho más fácil usar la etiqueta de HTML5.</p>
+		<p class="detail">HTML 4.01 <span class="code single dec">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;<br/>&quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</span></p>
+		<p class="detail">HTML5 <span class="code single dec">&lt;!DOCTYPE html&gt;	</span></p>
+		<p class="detail">Es mucho más fácil y cool usar la etiqueta de HTML5.</p>
 	</section>
 	<section class="content">
 		<h2>Sintaxis HTML - La etiqueta <span class="code tag">&lt;html&gt;</span></h2>
@@ -152,7 +160,8 @@
 	</section>
 	<section class="content">
 		<h2>Sintaxis HTML - La etiqueta <span class="code tag">&lt;body&gt;</span></h2>
-		<p>La etiqueta <span class="code tag">&lt;body&gt;</span> define el cuerpo del documento. Aquí es donde se encuentran todos los elementos como los parrafos, enlaces, imágenes, videos, tablas, listas ...</p>
+		<p>La etiqueta <span class="code tag">&lt;body&gt;</span> define el cuerpo del documento. </p>
+		<p class="detail">Aquí es donde se encuentran todos los elementos como los parrafos, enlaces, imágenes, videos, tablas, listas ... en general, todo el contenido visible</p>
 	</section>
 	<section class="content">
 		<h2>Sintaxis HTML - Estructura de una pagina</h2>
@@ -171,7 +180,11 @@
 				</code>
 			</pre>
 		</p>
-		<p class="detail">La etiqueta <span class="code tag">&lt;title&gt;</span> es requerida en la cabecera. esta etiqueta define el título de la pagina.</p>
+		<p class="detail">La etiqueta <span class="code tag">&lt;title&gt;</span> es requerida en la cabecera. Esta etiqueta define el título de la pagina.</p>
+	</section>
+	<section class="content">
+		<h2>Proyecto</h2>
+		<p>Para que no sea simplemente teoría, crearemos paso a paso <a href="project/" target="blank">este sitio</a></p>
 	</section>
 	<script src="lib/js/scripts.js"></script>
 </body>
