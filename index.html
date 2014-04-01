@@ -17,6 +17,8 @@
 <body>
 	<section>
 		<h1>HTML + CSS + Javascript</h1>
+		<p>Esto es un tutorial para enseñar un poco de HTML, CSS y Javascript, si lo estas leyendo y te gusto, házmelo saber mencionándome en un tweet.</p>
+		<p class="detail">Mi cuenta es @<a href="http://twitter.com&linkstrifer" target="blank">LinkStrifer</a> y pueden escribirme algo como <span class="code">Hey @<a href="http://twitter.com&linkstrifer" target="blank">LinkStrifer</a> que cool el tutorial</span> o cualquier cosa que se les ocurra. No se les olvide poner la url para que otros se enteren.</p>
 		<ul>
 			<a href="#/section/1">
 				<li>HTML5</li>
@@ -26,6 +28,9 @@
 			</a>
 			<a href="#/section/21">
 				<li>Proyecto</li>
+			</a>
+			<a href="#/section/22">
+				<li>Explicación del HTML del proyecto</li>
 			</a>
 			<!--<li>CSS3</li>
 			<li>Responsive Design</li>
@@ -161,11 +166,11 @@
 	<section class="content">
 		<h2>Sintaxis HTML - La etiqueta <span class="code tag">&lt;body&gt;</span></h2>
 		<p>La etiqueta <span class="code tag">&lt;body&gt;</span> define el cuerpo del documento. </p>
-		<p class="detail">Aquí es donde se encuentran todos los elementos como los parrafos, enlaces, imágenes, videos, tablas, listas ... en general, todo el contenido visible</p>
+		<p class="detail">Aquí es donde se encuentran todos los elementos como los parrafos, enlaces, imágenes, videos, tablas, listas ... en general, todo el contenido visible.</p>
 	</section>
 	<section class="content">
 		<h2>Sintaxis HTML - Estructura de una pagina</h2>
-		<p>Estructura de una pagina HTML sin contenido</p>
+		<p>Estructura de una pagina HTML sin contenido.</p>
 		<p class="detail">
 			<pre>
 				<code class="code single left prettyprint">
@@ -184,7 +189,128 @@
 	</section>
 	<section class="content">
 		<h2>Proyecto</h2>
-		<p>Para que no sea simplemente teoría, crearemos paso a paso <a href="project/" target="blank">este sitio</a></p>
+		<p>Para que no sea simplemente teoría, crearemos paso a paso <a href="project/" target="blank">este sitio</a>.</p>
+	</section>
+	<section class="content">
+		<h2>Nota</h2>
+		<p>Para empezar el proyecto explicaré el HTML base e iremos agregando lo que vayamos necesitando para no hacerlo tan difícil de entender al principio.</p>
+	</section>
+	<section class="content">
+		<h2>HTML básico</h2>
+		<p>Primero necesitamos el html básico de cualquier sitio web.</p>
+		<p class="detail">
+			<pre>
+				<code class="code single left prettyprint">
+&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;¿Estos son los droides que buscas?&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+				</code>
+			</pre>
+		</p>
+		<p class="detail">
+			Como pueden ver el título de nuestro proyecto es ¿Estos son los droides que buscas?
+		</p>
+	</section>
+	<section class="content">
+		<h2>Charset</h2>
+		<p>Ya tenemos el código básico, ahora vamos a añadirle soporte para carácteres especiales como las tildes o la letra ñ.</p>
+		<p class="detail">Simplemente tenemos que agregar una etiqueta al <span class="code tag">&lt;head&gt;</span> de nuestro sitio.</p>
+		<p class="detail">
+			<pre>
+				<code class="code single prettyprint">
+&lt;meta charset="utf-8"&gt;
+				</code>
+			</pre>
+		</p>
+		<p class="detail">Si no hacemos esto en vez de letras con tildes encontraremos codigos como <span class="code">&amp;aacute;</span> en lugar de <span class="code">á</span>.</p>
+	</section>
+	<section class="content">
+		<h2>Mapa</h2>
+		<p>Ahora necesitamos un espacio para cargar el mapa.</p>
+		<p class="detail">Para esto usaremos una etiqueta <span class="code tag">&lt;div&gt;</span> en el <span class="code tag">&lt;body&gt;</span> de nuestro sitio con el identificador <span class="code atv">map</span>.</p>
+		<p class="detail">
+			<pre>
+				<code class="code single prettyprint">
+&lt;div id="map"&gt;
+				</code>
+			</pre>
+		</p>
+		<p class="detail">La etiqueta <span class="code tag">&lt;div&gt;</span> se usa para definir una división o sección en el documento.</p>
+		<p class="detail">El atributo <span class="code atn">id</span> se usa como identificador dentro del documento, debe ser único en la pagina, se utiliza cuando se necesita una manera de buscar un elemento único, es decir, que no se repita.</p>
+	</section>
+	<section class="content">
+		<h2>Cabecera de la pagina</h2>
+		<p>Ahora agregaremos la cabecera de la página, que es diferente a la cabecera del documento.</p>
+		<p class="detail">La cabecera de la página se usa para que el usuario vea de que se trata nuestro sitio, algo así como una introducción, mientras que la cabecera del documento es donde estan los estilos, scripts, etiquetas meta.</p>
+		<p class="detail">Para la cabecera de la página usaremos una etiqueta <span class="code tag">&lt;header&gt;</span> introducida en html5 la cual tiene gran valor semántico, será lo primero que los buscadores lean dentro de la pagina, así que vamos a poner un título dentro de la cabecera.</p>
+		<p class="detail">
+			<pre>
+				<code class="code left single prettyprint">
+&lt;header&gt;
+  &lt;h1&gt;¿Estos son los droides que buscas?&lt;/h1&gt;
+&lt;/header&gt;
+				</code>
+			</pre>
+		</p>
+		<p class="detail">Para los títulos se usan etiquetas especiales que van por niveles de jerarquía desde el 1 al 6 siendo el 1 el de mayor jerarquía. Las etiquetas son <span class="code tag">&lt;h1&gt;</span> <span class="code tag">&lt;h2&gt;</span> <span class="code tag">&lt;h3&gt;</span> <span class="code tag">&lt;h4&gt;</span> <span class="code tag">&lt;h5&gt;</span> <span class="code tag">&lt;h6&gt;</span>.</p>
+		<p class="detail">La etiqueta <span class="code tag">&lt;h1&gt;</span> al ser la de mayor jerarquía no debería repetirse en el documento para no perder su valor semántico.</p>
+	</section>
+	<section class="content">
+		<h2>Galeria de fotos</h2>
+		<p>Ya casi terminamos, ahora nos falta la sección donde se cargarán las fotos.</p>
+		<p class="detail">Para esta parte usarémos un <span class="code tag">&lt;div&gt;</span> con el identificador <span class="code atv">gallery</span>.</p>
+		<p class="detail">
+			<pre>
+				<code class="code single prettyprint">
+&lt;div id="gallery"&gt;&lt;/div&gt;
+				</code>
+			</pre>
+		</p>
+		<p class="detail">No hay más explicación, practicamente es igual a la sección del mapa.</p>
+	</section>
+	<section class="content">
+		<h2>Mensaje de error</h2>
+		<p>Y para terminar necesitamos un mensaje que aparezca cuando la foto no tiene el lugar donde fue tomada.</p>
+		<p class="detail">Para esto usaremos otro <span class="code tag">&lt;div&gt;</span> con el identificador <span class="code atv">not-map</span>.</p>
+		<p class="detail">
+			<pre>
+				<code class="code single prettyprint">
+&lt;div id="not-map"&gt;&lt;/div&gt;
+				</code>
+			</pre>
+		</p>
+	</section>
+	<section class="content">
+		<h2>Código del proyecto hasta ahora</h2>
+		<p>Esto es lo que llevamos hasta ahora ¿Han entendido todo?</p>
+		<p class="detail">
+			<pre>
+				<code class="code single left prettyprint">
+&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;¿Estos son los droides que buscas?&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="map"&gt;
+      &lt;div id="map-canvas"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;header&gt;
+      &lt;h1&gt;¿Estos son los droides que buscas?&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;div id="gallery"&gt;&lt;/div&gt;
+    &lt;div id="not-map"&gt;¡No se encuentran los droides que buscas!&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+				</code>
+			</pre>
+		</p>
 	</section>
 	<script src="lib/js/scripts.js"></script>
 </body>

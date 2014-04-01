@@ -9,11 +9,12 @@ body {
   background-color: #000;
   font-family: 'Jedi';
 }
-nav {
+header h1 {
   background-color: #fff;
   font-family: 'Jedi';
   font-size: 1.5em;
   height: 80px;
+  margin: 0;
   padding: 1em;
   position: fixed;
   text-align: center;
@@ -30,7 +31,7 @@ nav {
   width: 350px;
   z-index: 10001;
 }
-#gallery img {
+#gallery .photo {
   display: block;
   border-color: #000;
   border-style: solid;
@@ -42,7 +43,7 @@ nav {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
-#gallery img.current {
+#gallery .photo.current {
   border-color: #ff3448;
   opacity: 1;
 }
