@@ -13,6 +13,14 @@
 	<script src="lib/js/backbone-min.js"></script>
 	<script src="lib/js/prettify.js"></script>
 	<script src="lib/js/lang-css.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-49819805-1', 'linkstrifer.github.io');
+	  ga('send', 'pageview');
+	</script>
 </head>
 <body>
 	<section>
@@ -33,8 +41,10 @@
 			<a href="#/section/22">
 				<li>Explicación del HTML del proyecto</li>
 			</a>
-			<!--<li>CSS3</li>
-			<li>Responsive Design</li>
+			<a href="#/section/30">
+				<li>CSS</li>
+			</a>
+			<!--<li>Responsive Design</li>
 			<li>Tipografías</li>
 			<li>Audio y video</li>
 			<li>Efectos CSS3</li>
@@ -228,7 +238,7 @@
 				</code>
 			</pre>
 		</p>
-		<p class="detail">Si no hacemos esto en vez de letras con tildes encontraremos codigos como <span class="code">&amp;aacute;</span> en lugar de <span class="code">á</span>.</p>
+		<p class="detail">Si no hacemos esto en vez de letras con tildes encontraremos codigos como <span class="code">Ã¡</span> en lugar de <span class="code">á</span>.</p>
 	</section>
 	<section class="content">
 		<h2>Mapa</h2>
@@ -262,8 +272,8 @@
 		<p class="detail">La etiqueta <span class="code tag">&lt;h1&gt;</span> al ser la de mayor jerarquía no debería repetirse en el documento para no perder su valor semántico.</p>
 	</section>
 	<section class="content">
-		<h2>Galeria de fotos</h2>
-		<p>Ya casi terminamos, ahora nos falta la sección donde se cargarán las fotos.</p>
+		<h2>Galeria de imágenes</h2>
+		<p>Ya casi terminamos, ahora nos falta la sección donde se cargarán las imágenes.</p>
 		<p class="detail">Para esta parte usarémos un <span class="code tag">&lt;div&gt;</span> con el identificador <span class="code atv">gallery</span>.</p>
 		<p class="detail">
 			<pre>
@@ -312,6 +322,184 @@
 				</code>
 			</pre>
 		</p>
+	</section>
+	<section class="content">
+		<h2>CSS</h2>
+		<p>Listo, ya tenemos más o menos la estructura que usaremos para el proyecto pero nos faltan los colores y estilos.</p>
+	</section>
+	<section class="content">
+		<h2>¿Que es CSS?</h2>
+		<p>CSS traduce hojas de estilo en cascada (cascade style sheets) y es un lenguaje de hojas de estilo que se usa para definir el aspecto de un documento HTML.</p>
+		<p class="detail">En resumen, es la piel de un sitio HTML, es decir, colores, tamaños, bordes, espaciado, entre otras cosas, de los elementos del documento.</p>
+	</section>
+	<section class="content">
+		<h2>CSS3</h2>
+		<p>Con HTML5 también llego una nueva versión de CSS, CSS v3 que trae nuevas funcionalidades que no estaban definidas en CSS2.</p>
+		<p class="detail">En CSS3, las nuevas funcionaliades se separaron en modulos.</p>
+		<p class="detail">Los modulos mas importantes que llegarón en CSS3 son los selectores, los modelos de caja, fondos y bordes, efectos de texto, transformaciónes 2d y 3d, animaciones y multiples columnas.</p>
+	</section>
+	<section class="content">
+		<h2>Sintaxis de CSS</h2>
+		<p>La sintaxis de CSS se basa en reglas, cada regla esta compuesta de un selector y un bloque de declaraciones.</p>
+		<p class="detail">El bloque de declaraciones es todo lo que esta entre las llaves, mostachos o como quieran llamarles <span class="code lang-css pln">{ }</span>. El bloque de declaraciones esta compuesto de una o más propiedades con sus respectivos valores.</p>
+		<p class="detail">
+			<pre>
+				<code class="code single left prettyprint lang-css">
+h1 {
+  color: blue;
+  font-size: 16px;
+}
+				</code>
+			</pre>
+		</p>
+		<p class="detail">El selector se usa para decirle a que elemento HTML se le aplicara la regla css. En este caso estamos aplicandole la regla a los elementos <span class="code tag">&lt;h1&gt;</span> del documento usando el selector <span class="code lang-css pln">h1</span>.</p>
+		<p class="detail">Cada declaración incluye la propiedad, seguido por el valor, separados por dos puntos y terminado en punto y coma. En este caso estamos cambiando las propiedades <span class="code kwd">color</span> y <span class="code kwd">font-size</span> por <span class="code lang-css pln">blue</span> y <span class="code lit">16px</span> respectivamente.</p>
+		<p class="detail">La propiedad <span class="code kwd">color</span> se utiliza para asignarle el color al texto.</p>
+		<p class="detail">Admite valores <u>hexadecimales</u> (ej <span class="code lit">#ffffff</span> para blanco), <u>RGB</u> (ej <span class="code"><span class="kwd">rgb</span><span class="lang-css pln">(</span><span class="lit">255</span><span class="lang-css pln">,</span><span class="lit">255</span><span class="lang-css pln">,</span><span class="lit">255</span><span class="lang-css pln">)</span></span> para blanco) y <u>nombres de colores</u> (ej <span class="code lang-css pln">white</span> para blanco)</p>
+		<p class="detail">La propiedad <span class="code kwd">font-size</span> se utiliza para asignarle el tamaño a la fuente. Admite valores en <u>pixeles</u>, <u>porcentajes</u> y <u>em</u>. <span class="code">1em</span> es equivalente al valor actual de la fuente, que por defecto es <span class="code">16px</span>. Es decir que <span class="code">1em = 16px</span> y <span class="code">2em = 32px</span>.</p>
+	</section>
+	<section class="content">
+		<h2>HTML y CSS</h2>
+		<p>Para usar los estilos CSS en un documento HTML hay que definirlos, para esto se pueden definir de tres formas.</p>
+		<p class="detail">Los estilos se pueden definir en cada elemento HTML directamente usando el atributo <span class="code atn">style</span>, pero estos estilos solo se aplicaran al elemento en donde se definan y no hay necesidad de usar selectores.</p>
+		<p class="detail">
+			<pre>
+				<code class="code prettyprint">
+&lt;body style="background-color: #000;"&gt;
+				</code>
+			</pre>
+		</p>
+		<p class="detail">Los estilos también se pueden escribir directamente en el documento HTML dentro de una etiqueta <span class="code tag">&lt;style&gt;</span> en la cabecera del documento. Estos estilos se aplicaran a todo el documento.</p>
+		<p class="detail">
+			<pre>
+				<code class="code single left prettyprint">
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;style&gt;
+      <span class="pln lang-css">body</span> <span class="pun lang-css">{</span>
+        background-color<span class="lang-css pun">:</span> #000<span class="lang-css pun">;</span>
+      <span class="pun lang-css">}</span>
+    &lt;/style&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+				</code>
+			</pre>
+		</p>
+		<p class="detail">La última forma es escribir los estilos en un archivo <span class="code">.css</span> y llamarlo en la cabecera del documento usando la etiqueta <span class="code tag">&lt;link&gt;</span>, la ruta del archivo se define en el atributo <span class="code atn">href</span>.</p>
+		<p class="detail">
+			<pre>
+				<code class="code prettyprint">
+&lt;link href="estilos.css"&gt;
+				</code>
+			</pre>
+		</p>
+		<p class="detail">La etiqueta <span class="code tag">&lt;link&gt;</span> es una de las etiquetas que no necesita una etiqueta de cierre.</p>
+		<p class="detail">Muchos recomiendan usar la tercera forma ya que es más fácil mantener un archivo con los estilos que estar cambiando los estilos en cada archivo HTML. Entre esos estoy yo :D!</p>
+	</section>
+	<section class="content">
+		<h2>Estilos predeterminados de los navegadores</h2>
+		<p>Cada navegador tiene una de estilos por defecto pero como cada navegador es desarrollado por una empresa diferente, las hojas de estilos por defecto también son diferentes.</p>
+		<p class="detail">Para evitar problemas de diseño en el futuro, muchos diseñadores y desarrolladores usan una hoja de estilos llamada <span class="code">normalize.css</span> que normaliza los estilos para que la pagina sin nuestros estilos se vea igual en todos los navegadores.</p>
+		<p class="detail">Para usarla simplemente guarden en la carpeta del proyecto <a href="lib/css/normalize.css" target="blank">este archivo</a> y llamenlo en la cabecera del documento.</p>
+		<p class="detail">
+			<pre>
+				<code class="code prettyprint">
+&lt;link href="normalize.css"&gt;
+				</code>
+			</pre>
+		</p>
+	</section>
+	<section class="content">
+		<h2>Hoja de estilos del proyecto</h2>
+		<p>Listo, vamos a trabajar.</p>
+		<p class="detail">Ahora creamos una hoja de estilos llamada <span class="code">styles.css</span> en la carpeta del proyecto y la llamamos en la cabecera del documento despúes de la hoja de estilos <span class="code">normalize.css</span>.</p>
+		<p class="detail">
+			<pre>
+				<code class="code single left prettyprint">
+&lt;head&gt;
+  &lt;link href="normalize.css"&gt;
+  &lt;link href="styles.css"&gt;
+&lt;/head&gt;
+				</code>
+			</pre>
+		</p>
+		<p class="detail"><u>Esto es importante</u> ya que el documento carga siempre el último estilo definido, por lo que <u>si ponemos <span class="code">styles.css</span> antes que <span class="code">normalize.css</span>, normalize sobreescribira algunos de los estilos que definamos.</u></p>
+	</section>
+	<section class="content">
+		<h2>Estilos del <span class="code tag">&lt;body&gt;</span></h2>
+		<p class="detail">Para el documento vamos a usar negro como color de fondo.</p>
+		<p class="detail">
+			<pre>
+				<code class="code single left prettyprint lang-css">
+body {
+  background-color: #000;
+}
+				</code>
+			</pre>
+		</p>
+		<p class="detail">Algunas propiedades tienen una propiedad general y una o más propiedades específicas.</p>
+		<p class="detail">En este caso la propiedad general para el fondo es <span class="code kwd">background</span> pero cuando solo quieres cambiar el color de fondo se puede utilizar la propiedad <span class="code kwd">background-color</span>.</p>
+		<p class="detail">Para el proyecto utilizaremos el negro como color de fondo para ver mejor las secciónes cuando estemos cambiando las propiedades.</p>
+	</section>
+	<section class="content">
+		<h2>Estilos del <span class="code tag">&lt;header&gt;</span></h2>
+		<p>En la cabecera de la pagina solo tenemos el título y necesitamos que siempre este fija cuando hagamos scroll.</p>
+		<p class="detail">Para empezar la cabecera tendrá blanco como color de fondo.</p>
+		<p class="detail">Para hacer que siempre este fija cuando hagamos scroll definiremos la propiedad <span class="code kwd">position</span> con el valor <span class="code lit">fixed</span>.</p>
+		<p class="detail">Centraremos el texto, para esto definimos la propiedad <span class="code kwd">text-align</span> en <span class="code lit">center</span>.</p>
+		<p class="detail">También le diremos que tome todo el ancho de la pagina con la propiedad <span class="code kwd">width</span> y el valor <span class="code lit">100%</span>.</p>
+		<p class="detail">
+			<pre>
+				<code class="code single prettyprint lang-css left">
+header {
+  background-color: #fff;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+				</code>
+			</pre>
+		</p>
+		<p class="detail">Para el color blanco use <span class="code lit">#fff</span> que sería lo mismo que escribir <span class="code lit">#ffffff</span>.</p>
+		<p class="detail">La propiedad <span class="code kwd">position</span> define el metodo para posicionar el elemento, en este caso usamos el valor <span class="code lit">fixed</span>, este hace que el elemento este posicionado en relacion a la ventana del documento, por eso es que se mantiene estático cuando hacemos scroll.</p>
+	</section>
+	<section class="content">
+		<h2>Estilos del <span class="code tag">&lt;header&gt; &lt;h1&gt;</span></h2>
+		<p>Ya tenemos los estilos de la cabecera, ahora vamos a definir los estilos del título de la cabecera.</p>
+		<p class="detail">Los h1 por defecto tienen un <span class="code kwd">font-size</span> de <span class="code lit">2em</span>, es muy grande para lo que harémos entonces lo cambiaremos a <span class="code lit">1.5em</span>. Un dato importante es que <u>solo</u> queremos que el <span class="code tag">&lt;h1&gt;</span> hijo del <span class="code tag">&lt;header&gt;</span> tenga un tamaño de letra diferente. Para esto usamos el selector <span class="code tag">header h1</span> ya que si usamos <span class="code tag">h1</span> los estilos se aplicacian a todos los <span class="code tag">&lt;h1&gt;</span> del documento.</p>
+		<p class="detail">
+			<pre>
+				<code class="code left single lang-css prettyprint">
+header h1 {
+  font-size: 1.5em;
+}
+				</code>
+			</pre>
+		</p>
+	</section>
+	<section class="content">
+		<h2>Estilos de nuestra galería de imágenes</h2>
+		<p>Hasta ahora tenemos un div para el mapa y la cabecera del sitio. Es el turno de la galería.</p>
+		<p class="detail">Necesitamos que la galería este a un lado y no ocupe toda la pantalla horizontalmente para que el mapa sea visible.</p>
+		<p class="detail">Además necesitamos que tenga un color de fondo para no tener las imagénes volando sobre el mapa.</p>
+		<p class="detail">Para aplicarle los estilos usaremos el selector <span class="code pln lang-css">#gallery</span> que en este casi, no es un hashtag social ¿recuerdan que el div de la gallería tiene un id? Para esto se usa, los id son selectores especiales.</p>
+		<p class="detail">Imaginen que tenemos miles de divs en un documento y debemos aplicarle estilos especifícos a uno de ellos. Al usar el selector <span class="code pln lang-css">#gallery</span>, estos estilos se aplicarán a cualquier elemento que tenga el atributo <span class="code atn">id</span> con el valor <span class="code atv">gallery</span>. <u>Recuerden que los id no se repiten</u>.</p>
+		<p class="detail">
+			<pre>
+				<code class="code left single lang-css prettyprint">
+#gallery {
+  background-color: #fff;
+  padding: 1em;
+  position: relative;
+  width: 350px;
+}
+				</code>
+			</pre>
+		</p>
+		<p class="detail"><span class="code kwd">background-color</span>, <span class="code kwd">position</span> y <span class="code kwd">width</span> son propiedades que ya vimos. Las única nueva es <span class="code kwd">padding</span>.</p>
+		<p class="detail">La propiedad <span class="code kwd">padding</span> se refiere al espacio que hay entre el borde del elemento y su contenido, <span class="code">padding</span> es <span class="code">relleno</span> en ingles ¿Quien dijo que no podiamos aprender también algo de ingles?</p>
+		<p class="detail">Para que se entienda mejor el concepto de <span class="code kwd">padding</span> se debe conocer a su "hermano" <span class="code kwd">margin</span>, este es el espacio entre el borde del elemento y lo que está alrededor de el.</p>
+		<p class="detail">La propiedad <span class="code kwd">position</span> ya la habiamos visto, define el metodo para posicionar el elemento, en este caso usaremos el valor <span class="code lit">relative</span> que posiciona el elemento en relación a su posición normal, a primera vista no tiene uso pero si no le ponemos esto, cuando carguemos el mapa la galería quedará detras de el. Así que si, <u>es importante</u>.</p>
 	</section>
 	<script src="lib/js/scripts.js"></script>
 </body>

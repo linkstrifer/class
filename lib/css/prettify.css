@@ -2,7 +2,8 @@
   color: #333;
 }
 
-.lang-css .pln {
+.lang-css .pln,
+.lang-css.pln {
 	color: #8ac007;
 }
 
